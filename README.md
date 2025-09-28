@@ -1,3 +1,8 @@
+## 📜 License
+
+This project is licensed under the [MIT License](LICENSE).
+
+
 Image Background Changer
 A sleek, modern web application that allows you to remove or change the background of your images with just a few clicks. Built with HTML, CSS, and JavaScript with beautiful animations and UI.
 
