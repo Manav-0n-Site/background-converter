@@ -1,7 +1,7 @@
 Image Background Changer
 A sleek, modern web application that allows you to remove or change the background of your images with just a few clicks. Built with HTML, CSS, and JavaScript with beautiful animations and UI.
 
-https://via.placeholder.com/800x400/6c63ff/ffffff?text=Image+Background+Changer
+https://manav-0n-site.github.io/background-converter/
 
 ✨ Features
 Background Removal: Remove image backgrounds with one click
@@ -25,7 +25,7 @@ No External Dependencies: Pure HTML, CSS, and JavaScript (except AOS library)
 Clone the repository:
 
 bash
-git clone https://github.com/yourusername/image-background-changer.git
+git clone https://manav-0n-site.github.io/background-converter/
 Navigate to the project directory:
 
 bash
@@ -148,9 +148,9 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 👨‍💻 Developer
 Manav
 
-GitHub: @manav
+GitHub: Manav-0n-Site
 
-Project Link: https://github.com/manav/image-background-changer
+Project Link: https://manav-0n-site.github.io/background-converter/
 
 🙏 Acknowledgments
 AOS Library for scroll animations
