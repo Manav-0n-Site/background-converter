@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Background Changer</title>
+    <!-- AOS Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Vector Background Elements -->
+        <div class="vector-bg vector-1"></div>
+        <div class="vector-bg vector-2"></div>
+        <div class="vector-bg vector-3"></div>
+        <div class="vector-bg vector-4"></div>
+
+        <header data-aos="fade-down">
+            <h1>Image Background Changer</h1>
+            <p class="subtitle">Remove or change the background of your images with just a few clicks. Download your edited images instantly.</p>
+            <div class="credit" data-aos="zoom-in" data-aos-delay="300">
+                <i class="fas fa-code"></i>
+                <span>Created by Manav</span>
+            </div>
+        </header>
+
+        <div class="app-container">
+            <div class="card upload-section" data-aos="fade-right">
+                <div class="image-preview" id="imagePreview">
+                    <i class="fas fa-cloud-upload-alt upload-icon"></i>
+                    <p class="upload-text">Upload an image to get started</p>
+                    <img id="previewImage" alt="Preview">
+                    <div class="loader" id="previewLoader"></div>
+                </div>
+                <input type="file" id="imageUpload" accept="image/*" style="display: none;">
+                <button class="upload-btn" id="uploadTrigger">
+                    <i class="fas fa-upload"></i> Choose Image
+                </button>
+            </div>
+
+            <div class="card controls-section" data-aos="fade-up">
+                <div class="control-group">
+                    <h2><i class="fas fa-sliders-h"></i> Background Options</h2>
+                    <div class="btn-group">
+                        <button class="control-btn" id="removeBgBtn">
+                            <i class="fas fa-cut"></i> Remove Background
+                        </button>
+                        <button class="control-btn active" id="changeColorBtn">
+                            <i class="fas fa-palette"></i> Change Color
+                        </button>
+                    </div>
+                </div>
+
+                <div class="control-group" id="colorOptions">
+                    <h2><i class="fas fa-fill-drip"></i> Choose Color</h2>
+                    <div class="color-picker">
+                        <div class="color-option active" style="background-color: #ffffff;" data-color="#ffffff"></div>
+                        <div class="color-option" style="background-color: #000000;" data-color="#000000"></div>
+                        <div class="color-option" style="background-color: #6c63ff;" data-color="#6c63ff"></div>
+                        <div class="color-option" style="background-color: #ff6584;" data-color="#ff6584"></div>
+                        <div class="color-option" style="background-color: #36d1dc;" data-color="#36d1dc"></div>
+                        <div class="color-option" style="background-color: #ffcc70;" data-color="#ffcc70"></div>
+                        <div class="color-option" style="background-color: #42b883;" data-color="#42b883"></div>
+                        <div class="color-option" style="background-color: #ff9a3c;" data-color="#ff9a3c"></div>
+                    </div>
+                    <div class="custom-color">
+                        <input type="color" id="customColor" value="#6c63ff">
+                        <span>Custom Color</span>
+                    </div>
+                </div>
+
+                <div class="download-section">
+                    <button class="download-btn" id="downloadBtn" disabled>
+                        <i class="fas fa-download"></i> Download Image
+                    </button>
+                </div>
+            </div>
+
+            <div class="card result-section" data-aos="fade-left">
+                <h2><i class="fas fa-image"></i> Result</h2>
+                <div class="result-image" id="resultContainer">
+                    <div class="result-placeholder">
+                        <i class="fas fa-image"></i>
+                        <p>Your edited image will appear here</p>
+                    </div>
+                    <img id="resultImage" alt="Result">
+                    <div class="loader" id="resultLoader"></div>
+                </div>
+                <p class="upload-text">Preview your image with the new background</p>
+            </div>
+        </div>
+
+        <div class="instructions" data-aos="fade-up">
+            <h3><i class="fas fa-info-circle"></i> How to use:</h3>
+            <ol>
+                <li>Click "Choose Image" to upload your image</li>
+                <li>Select "Remove Background" to make the background transparent or "Change Color" to pick a new background color</li>
+                <li>Choose from preset colors or use the custom color picker</li>
+                <li>Click "Download Image" to save your edited image</li>
+            </ol>
+        </div>
+
+        <footer data-aos="fade-up">
+            <p>Image Background Changer &copy; 2023 | Created with ❤️ by Manav</p>
+        </footer>
+    </div>
+
+    <!-- AOS Library -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
